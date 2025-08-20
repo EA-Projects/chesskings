@@ -96,7 +96,7 @@ window.addEventListener('load', function() {
     if ($('#waitlist-form').length) {
         $(function () {
             const scriptURL =
-                'https://script.google.com/macros/s/AKfycbyxtPyBFNA2fzoUPfW-txB_GBOQ1ki_Z_CWvEN01-BOdg4Pzwn_nbzX_7sZLA5kvA7aBw/exec';
+                'https://script.google.com/macros/s/AKfycbzYh7a-zZceUqj-V3_grsTBWgK3Dam0cumUPkVV-CDlmkuoKVP7AnLSnUi8o13fkHH7/exec';
             const form = document.getElementById('waitlist-form');
         
             form.addEventListener('submit', (e) => {
