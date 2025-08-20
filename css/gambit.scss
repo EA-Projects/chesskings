@@ -1,0 +1,157 @@
+#hero-gambit{
+    padding-top: 170px;
+    text-align: center;
+    h1{
+        margin-bottom: 20px;
+    }
+    .inner-cards{
+        position: relative;
+        margin-top: 50px;
+        .blur-circle{
+            width: 80%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) translateZ(0);
+            background-color: #bc6f4e56;
+            filter: blur(100px);
+        }
+        .inner-phones{
+            max-width: 972px;
+            position: relative;
+            z-index: 1;
+        }
+        .inner-soldiers-list{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -30px;
+            .inner-soldiers{
+                filter: none;
+                width: 100%;
+                max-width: none;
+                position: relative;
+                z-index: 2;
+                &.is-1{
+                    top: -60px;
+                    max-width: 194px;
+                }
+                &.is-2{
+                    max-width: 229px;
+                }
+                &.is-3{
+                    top: -60px;
+                    max-width: 189px;
+                }
+            }
+        }
+    }
+    @media(max-width: 991px){
+        padding-top: 120px;
+        .inner-cards{
+            .inner-phones{
+                width: 100%;
+                max-width: 700px;
+            }
+            .inner-soldiers-list{
+                max-width: 800px;
+                .inner-soldiers{
+                    &.is-1{
+                        max-width: 120px;
+                    }
+                    &.is-2{
+                        max-width: 150px;
+                    }
+                    &.is-3{
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .inner-cards{
+            .inner-phones{
+                max-width: 400px;
+            }
+            .inner-soldiers-list{
+                max-width: 500px;
+                .inner-soldiers{
+                    &.is-1{
+                        max-width: 70px;
+                    }
+                    &.is-2{
+                        max-width: 90px;
+                    }
+                    &.is-3{
+                        max-width: 70px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 575px){
+        .inner-cards{
+            .inner-phones{
+                max-width: 300px;
+            }
+            .inner-soldiers-list{
+                max-width: 340px;
+                .inner-soldiers{
+                    &.is-1{
+                        max-width: 45px;
+                    }
+                    &.is-2{
+                        max-width: 65px;
+                    }
+                    &.is-3{
+                        max-width: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#intro{
+    &.is-gambit{
+        .inner-graphic{
+            max-width: 571px;
+            img{
+                width: 100%;
+            }
+        }
+        @media(max-width: 991px){
+            padding-top: 50px;
+            .inner-graphic{
+                margin-top: 50px;
+                max-width: 400px;
+            }
+        }
+        @media(max-width: 575px){
+            .inner-graphic{
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+#features{
+    &.is-gambit{
+        padding-bottom: 50px; 
+    }
+}
+
+#waitlist{
+    &.is-gambit{
+        padding-top: 0;
+    }
+}

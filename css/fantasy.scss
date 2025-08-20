@@ -1,0 +1,143 @@
+#hero-fantasy{
+    padding-top: 170px;
+    background: url('../public/images/fantasy/hero-image.jpg') no-repeat center 200px;
+    background-size: contain;
+    text-align: center;
+    h1{
+        max-width: 1100px;
+        margin: 0 auto 50px;
+    }
+    img{
+        max-width: 238px;
+        filter: drop-shadow(0 0 20px #FFD09C80);
+    }
+    .inner-cards{
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        .inner-card{
+            filter: none;
+            width: 100%;
+            max-width: none;
+            position: relative;
+            &.is-1{
+                margin-top: -25px;
+                max-width: 235px;
+                z-index: 1;
+            }
+            &.is-2{
+                margin-left: -75px;
+                max-width: 298px;
+                z-index: 2;
+            }
+            &.is-3{
+                max-width: 478px;
+                margin: 0 -80px;
+                z-index: 3;
+            }
+            &.is-4{
+                margin-right: -75px;
+                max-width: 300px;
+                z-index: 2;
+            }
+            &.is-5{
+                margin-top: -25px;
+                max-width: 233px;
+                z-index: 1;
+            }
+        }
+    }
+    @media(max-width: 991px){
+        padding-top: 120px;
+        overflow: hidden;
+        img{
+            max-width: 150px;
+        }
+        .inner-cards{
+            .inner-card{
+                &.is-1{
+                    max-width: 160px;
+                }
+                &.is-2{
+                    margin-left: -100px;
+                    max-width: 265px;
+                }
+                &.is-3{
+                    max-width: 400px;
+                    margin: 0 -250px;
+                }
+                &.is-4{
+                    margin-right: -100px;
+                    max-width: 265px;
+                }
+                &.is-5{
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+    @media(max-width: 575px){
+        h1{
+            font-size: 28px;
+        }
+        img{
+            max-width: 100px;
+        }
+        .inner-cards{
+            .inner-card{
+                &.is-1{
+                    max-width: 80px;
+                }
+                &.is-2{
+                    margin-left: -50px;
+                    max-width: 180px;
+                }
+                &.is-3{
+                    max-width: 300px;
+                    margin: 0 -150px;
+                }
+                &.is-4{
+                    margin-right: -50px;
+                    max-width: 180px;
+                }
+                &.is-5{
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+}
+
+#intro{
+    &.is-fantasy{
+        .inner-graphic{
+            max-width: 597px;
+            img{
+                width: 100%;
+                max-width: 597px;
+            }
+        }
+        @media(max-width: 991px){
+            padding-top: 50px;
+            padding-bottom: 100px;
+            .inner-graphic{
+                margin-top: 50px;
+                max-width: 400px;
+            }
+        }
+        @media(max-width: 575px){
+            h2{
+                max-width: 250px;
+                margin: 0 auto 20px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            .inner-graphic{
+                max-width: 250px;
+            }
+        }
+    }
+}
