@@ -17,10 +17,10 @@
     }
     .inner-graphic{
         position: relative;
-        max-width: 650px;
+        max-width: 641px;
         margin-left: auto;
         img{
-            max-width: 641px;
+            width: 100%;
             position: relative;
             z-index: 1;
         }
@@ -35,14 +35,29 @@
             background-color: #BC6F4E80;
             filter: blur(100px);
         }
+        &.is-home{
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 38%;
+                height: 20%;
+                background: linear-gradient(0deg, #000000 0%, #00000000 20%);
+                z-index: 2;
+            }
+            &::after{
+
+                background: linear-gradient(-90deg,#000000 8%,rgba(0,0,0,0) 20%);
+            }
+        }
     }
     @media(max-width: 991px){
         text-align: center;
         .inner-graphic{
             margin-right: auto;
-            img{
-                max-width: 400px;
-            }
+            max-width: 400px;
             .blur-circle{
                 width: 300px;
                 height: 300px;
@@ -52,9 +67,7 @@
     @media(max-width: 767px){
         .inner-graphic{
             margin-top: 50px;
-            img{
-                max-width: 300px;
-            }
+            max-width: 300px;
             .blur-circle{
                 top: 35%;   
                 width: 200px;
@@ -259,6 +272,7 @@
             font-weight: 400;
             margin-top: 40px;
             &:last-child{
+                margin-top: 20px;
                 opacity: .6;
             }
         }
