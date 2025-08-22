@@ -377,6 +377,17 @@ section{
                     padding: 10px 20px 8px;
                 }
             }
+            &.scrolled{
+                .inner-navigation{
+                    img{
+                        max-width: 45px;
+                    }
+                    .button{
+                        font-size: 12px;
+                        padding: 10px 20px 8px;
+                    }
+                }
+            }
         }
     }
     @media(max-width: 575px){

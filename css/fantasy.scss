@@ -79,6 +79,7 @@
         }
     }
     @media(max-width: 575px){
+        padding-bottom: 30px;
         h1{
             font-size: 28px;
         }
@@ -137,6 +138,16 @@
             }
             .inner-graphic{
                 max-width: 250px;
+            }
+        }
+    }
+}
+
+#waitlist{
+    &.is-fantasy{
+        @media(max-width: 575px){
+            .inner-bottom{
+                margin-top: 50px;
             }
         }
     }

@@ -153,5 +153,10 @@
 #waitlist{
     &.is-gambit{
         padding-top: 0;
+        @media(max-width: 575px){
+            .inner-bottom{
+                margin-top: 50px;
+            }
+        }
     }
 }

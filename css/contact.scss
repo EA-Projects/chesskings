@@ -22,5 +22,8 @@
 #waitlist{
     &.is-contact{
         background: linear-gradient(180deg, #000000 0%, #BB6E4D 100%);
+        @media(max-width: 575px){
+            padding-top: 30px;
+        }
     }
 }

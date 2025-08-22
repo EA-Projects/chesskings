@@ -175,8 +175,8 @@
         padding: 60px 0;
         .inner-options{
             max-width: 220px;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 30px;
+            margin-bottom: 40px;
         }
     }
 }
@@ -305,13 +305,20 @@
         }
     }
     @media(max-width: 575px){
-        padding: 60px 0;
+        padding: 0 0 60px;
         .inner-top{
             .inner-crown{
                 max-width: 120px;
                 .blur-circle{
                     width: 100px;
                     height: 100px;
+                }
+            }
+        }
+        .inner-bottom{
+            p{
+                &:last-child{
+                    font-size: 12px;
                 }
             }
         }

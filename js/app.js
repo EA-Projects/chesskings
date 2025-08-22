@@ -1,45 +1,42 @@
 window.addEventListener('load', function() {      
-    if ($('#password-form').length) {
-        // Lista de hashes y páginas asociadas
-        const accessMap = {
-            "d0c9fbbb5eee8313fd880d191d3259d100da3833f003fe8043a96e147769cf72": "/gambit.html",
-            "5b53eed9be94bdfec231517f1a110a3343a5211aa8702a0ea2f90630efd9abb1": "/fantasy.html"
+    if ($('#xdqzweñwq').length) {
+        // Tokens asociados a contenido cifrado
+        const cfg = {
+            "G!312zadsa": "U2FsdGVkX199ibcJETdR++zM/M46vrMmDs+L7fbDAgQ=",
+            "FqEXzxf!drt": "U2FsdGVkX198ZMLCCrvE6pR4FvSNWHvgY3tdUZ6atZM="
         };
-
-        async function hashPassword(password) {
-        const encoder = new TextEncoder();
-        const data = encoder.encode(password);
-        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-        return Array.from(new Uint8Array(hashBuffer))
-            .map(b => b.toString(16).padStart(2, "0"))
-            .join("");
-        }
-
-        // Recuperamos accesos ya guardados (array)
-        // 
-        let savedAccess = JSON.parse(localStorage.getItem("accessPages")) || [];
-
-        document.getElementById("loginBtn").addEventListener("click", async function(e) {
+        const routes = {
+            "G!312zadsa": "/gambit.html",
+            "FqEXzxf!drt": "/fantasy.html"
+        };
+        let sess = JSON.parse(localStorage.getItem("__cfg_x9")) || [];
+        document.getElementById("loginBtn").addEventListener("click", function(e) {
             e.preventDefault();
-            const pass = document.getElementById("password").value;
-            const passHash = await hashPassword(pass);
+            const pass = document.getElementById("xgDaQeñwXq").value;
 
-            if (accessMap[passHash]) {
-                const page = accessMap[passHash];
-
-                // Si no estaba ya en la lista, lo agregamos
-                if (!savedAccess.includes(page)) {
-                    savedAccess.push(page);
-                    localStorage.setItem("accessPages", JSON.stringify(savedAccess));
+            let success = false;
+            for (const key in cfg) {
+                const encrypted = cfg[key];
+                try {
+                    const bytes = CryptoJS.AES.decrypt(encrypted, pass);
+                    const decrypted = bytes.toString(CryptoJS.enc.Utf8);
+                    if (decrypted === "token") {
+                        if (!sess.includes(key)) {
+                            sess.push(key);
+                            localStorage.setItem("__cfg_x9", JSON.stringify(sess));
+                        }
+                        window.location.href = routes[key];
+                        success = true;
+                        break;
+                    }
+                } catch (err) {
                 }
-
-                window.location.href = page;
-            } else {
+            }
+            if (!success) {
                 $('.alert-message').fadeIn();
             }
         });
     }
-
 
     // Date Picker initializer 
     $(function(){
