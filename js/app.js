@@ -1,6 +1,5 @@
 window.addEventListener('load', function() {      
     if ($('#xdqzweñwq').length) {
-        // Tokens asociados a contenido cifrado
         const cfg = {
             "G!312zadsa": "U2FsdGVkX199ibcJETdR++zM/M46vrMmDs+L7fbDAgQ=",
             "FqEXzxf!drt": "U2FsdGVkX198ZMLCCrvE6pR4FvSNWHvgY3tdUZ6atZM="
@@ -12,13 +11,13 @@ window.addEventListener('load', function() {
         let sess = JSON.parse(localStorage.getItem("__cfg_x9")) || [];
         document.getElementById("loginBtn").addEventListener("click", function(e) {
             e.preventDefault();
-            const pass = document.getElementById("xgDaQeñwXq").value;
+            const paxxaqss = document.getElementById("xgDaQeñwXq").value;
 
             let success = false;
             for (const key in cfg) {
                 const encrypted = cfg[key];
                 try {
-                    const bytes = CryptoJS.AES.decrypt(encrypted, pass);
+                    const bytes = CryptoJS.AES.decrypt(encrypted, paxxaqss);
                     const decrypted = bytes.toString(CryptoJS.enc.Utf8);
                     if (decrypted === "token") {
                         if (!sess.includes(key)) {
