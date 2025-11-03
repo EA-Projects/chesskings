@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
-Sitemap: https://www.playchesskings.com/sitemap.xml
-Host: https://www.playchesskings.com
+Disallow: /
+Sitemap: 
+Host: 
