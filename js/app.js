@@ -1,8 +1,8 @@
 window.addEventListener('load', function() {      
     if ($('#xdqzweñwq').length) {
         const cfg = {
-            "G!312zadsa": "U2FsdGVkX199ibcJETdR++zM/M46vrMmDs+L7fbDAgQ=",
-            "FqEXzxf!drt": "U2FsdGVkX198ZMLCCrvE6pR4FvSNWHvgY3tdUZ6atZM="
+            "G!312zadsa": "U2FsdGVkX19Lhsfte/j/onrPa9Yd02doM9VxNem/KfI=",
+            "FqEXzxf!drt": "U2FsdGVkX189Aex7tfCwxvk3+EaB2pHJjiVgvZl+448="
         };
         const routes = {
             "G!312zadsa": "/gambit.html",
@@ -92,7 +92,7 @@ window.addEventListener('load', function() {
     if ($('#waitlist-form').length) {
         $(function () {
             const scriptURL =
-                'https://script.google.com/macros/s/AKfycbzCSHLaHFsrDWEDG7GBOPHRtHarjytI3giK00V2RjdgzKpadU0qChAhZ98qcLnhGQwsEA/exec';
+                'https://script.google.com/macros/s/AKfycbwfe9dHkgYRyniUnptu-T8-n6ZIx3SaF-UGrDI_yVGVEqAuFZwagIO8vH5izB-b1CD0QQ/exec';
             const form = document.getElementById('waitlist-form');
         
             form.addEventListener('submit', (e) => {
