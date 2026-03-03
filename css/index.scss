@@ -125,8 +125,8 @@
             }
         }
         .phone-video{
-            max-width: 282px;
-            top: 5px;
+            max-width: 277px;
+            top: 14px;
             left: 0;
             right: 0;
             margin: 0 auto;
@@ -278,7 +278,7 @@
         p{
             font-weight: 400;
             margin-top: 40px;
-            &:last-child{
+            &.disclaimer{
                 margin-top: 20px;
                 opacity: .6;
             }

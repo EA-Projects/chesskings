@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Kings - Gambit</title>
+    <title>Chess Kings - Gameplay Rules</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css?v=1.0.0">
@@ -29,14 +29,7 @@
     <meta name="description" content="">
     <meta name="twitter:image" content="/og-image.webp">
 </head>
-
 <body>
-    <script>
-        const sess = JSON.parse(localStorage.getItem("__cfg_x9")) || [];
-        if (!sess.includes("G!312zadsa")) {
-            window.location.href = "/password.html";
-        }
-    </script>
     <div class="wrapper-site">
         <div class="wrapper-nav">
             <nav class="navbar navbar-expand-lg">
@@ -61,8 +54,8 @@
                                         <div class="inner-navigation-links">
                                             <a href="/">HOME</a>
                                             <a href="fantasy.html">FANTASY</a>
-                                            <a href="gambit.html" class="active">GAMBIT</a>
-                                            <a href="contact.html">CONTACT</a>
+                                            <a href="gambit.html">GAMBIT</a>
+                                            <a href="contact.html" class="active">CONTACT</a>
                                         </div>
                                     </div>
                                 </div>
@@ -73,69 +66,34 @@
                 </div>
             </nav>
         </div>
-        <section id="hero-gambit">
+        <section id="hero-contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 data-fade>GAMBIT PASS</h1>
-                        <p class="large" data-fade>Customize your play experience by unlocking or purchasing unique rewards!</p>
-                        <div class="inner-cards">
-                            <img data-fade src="public/images/gambit/hero-gambit-phones.webp" role="presentation" class="inner-phones">
-                            <div class="inner-soldiers-list">
-                                <img data-fade src="public/images/gambit/hero-gambit-soldier-1.webp" role="presentation" class="inner-soldiers is-1">
-                                <img data-fade src="public/images/gambit/hero-gambit-soldier-2.webp" role="presentation" class="inner-soldiers is-2">
-                                <img data-fade src="public/images/gambit/hero-gambit-soldier-3.webp" role="presentation" class="inner-soldiers is-3">
-                            </div>
-                            <div class="blur-circle"></div>
-                        </div>
+                        <h1>GAMEPLAY <br> RULES</h1>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                </div>
-            </div>
-        </section>
-        <section id="intro" class="is-gambit">
+        <section id="waitlist" class="is-contact">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="h1" data-fade>THE ART OF <br> STRATEGY</h2>
-                        <p class="large" data-fade>In-game purchases through the chess kings store allow users to customize their boards and pieces, while designing their experience. Create and collect with today’s popular brands and franchises.</p>
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="inner-graphic" data-fade>
-                            <img src="public/images/gambit/strategy-soldiers.webp" role="presentation">
-                            <div class="blur-circle"></div>
+                <div class="row justify-content-center">
+                    <div class="col-9 text-left">
+                        <div data-fade>
+                            <p class="large mb-4">Each contestant will be given a bank of 250 dollar credits.</p>
+                            <p class="large mb-4">All contests will be 10 credits per player for a total of 20 credits in the pot (minimum wager).</p>
+                            <p class="large mb-4">Every contest will be subject to a 7% rake deducted at the close of the contest. If a player loses their credits and are unable to make the minimum wager of 10 credits, they may request a new deposit of 250 credits to their account. There are no limits to the number of times a player may replenish their account.</p>
+                            <p class="large mb-4">Each game will be a 5 minute Blitz format. Each player will have a total of 5 minutes to move their pieces.</p>
+                            <p class="large mb-4">Each game will require a 10 credit wager from each player.</p>
+                            <p class="large mb-4">If a player’s time expires, they lose the match. </p>
+                            <p class="large mb-4">Each contest must have a winner. There are no draws.</p>
+                            <p class="large mb-4">If a player cancels the game or exits the game before completion, they lose.</p>
+                            <p class="large mb-4">If a game expires in a perceived stalemate, the game engine determines which player holds the advantage, (able to mate) and is declared the winner. </p>
+                            <p class="large mb-4">In the unlikely event of a draw, each player will receive a credit to their account of the amount wagered, minus the rake of 7%.</p>
+                            <p class="large mb-0">If the ChessKings anti-cheating system detects and raises suspicion of cheating or artificial assistance, the player is subject to being disqualified at the sole discretion of ChessKings.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="features" class="is-gambit">
-            <div class="container">
-                <div class="row align-items-stretch">
-                    <div class="col-12 col-lg-4 order-2 order-lg-1">
-                        <div class="inner-options is-left">
-                            <h3 data-fade>CHESS KINGS MARKETPLACE</h3>
-                            <h3 data-fade>REDEEM YOUR REWARDS</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 order-0 order-lg-1">
-                        <div class="inner-phones" data-fade="">
-                            <video muted playsinline autoplay loop src="public/gambit-video.mp4" class="phone-video"></video>
-                            <img src="public/images/homepage/phone-edges.webp" class="phone-edge" role="presentation">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 order-3">
-                        <div class="inner-options is-right">
-                            <h3 data-fade>CUSTOMIZE <br> YOUR GAME</h3>
-                            <h3 data-fade>BUILD YOUR KINGDOM</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="waitlist" class="is-gambit">
-            <div class="container">
-                <div class="row">
                     <div class="col-12">
                         <div class="inner-bottom">
                             <img src="public/images/homepage/ck-large.webp" alt="Chess Kings">
@@ -152,8 +110,6 @@
             </div>
         </section>
     </div>
-    <!-- CryptoJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <!-- jQuery -->
     <script src="lib/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
